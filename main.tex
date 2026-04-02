@@ -26,20 +26,16 @@
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{NGUYEN HUU TRUONG} % Your name 
-\address{Ho Chi Minh City, Vietnam} % Your address 
-\address{+84 986103378 \\ truongnh2802@gmail.com} % Your phone number and email
-\address{https://www.linkedin.com/in/truongnh28}
+\address{Ho Chi Minh City, Vietnam \\ +84 986103378 \\ truongnh2802@gmail.com \\ linkedin.com/in/truongnh28}
 \begin{document}
 
 %----------------------------------------------------------------------------------------
 %	OBJECTIVE SECTION
 %----------------------------------------------------------------------------------------
 
-% \begin{rSection}{Objective}
-
-%     As a recently graduated Software Engineer with a strong foundation in programming, data structures, algorithms, and systems, I am eager to apply my skills and knowledge to develop efficient, scalable, and secure backend software systems. I am a quick learner, adaptable to new environments, and a team player who is committed to completing projects to the best of my ability. I am also passionate about gaining real-world experience, enhancing my technical skills, and becoming an expert Backend Software Engineer who can contribute to the company's growth.
-
-% \end{rSection}
+\begin{rSection}{Summary}
+    I am a Software Engineer at Zalopay with experience in designing and building platform architecture, CI/CD systems, distributed infrastructure, and high-concurrency environments. I have a strong background in distributed systems, event-driven architectures, and AI enablement initiatives, with a proven track record of architecting scalable platforms and driving engineering productivity improvements.
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -49,7 +45,7 @@
 
     {\bf Ho Chi Minh City University of Technology (HCMUT)} \hfill {Dec 2024 -- Present}
     \\
-    Master of Engineering in Data Science, GPA: 3.31/4.00
+    Master of Engineering in Computer Science, GPA: 8.0/10
 
     {\bf Posts and Telecommunications Institute of Technology (PTIT)} \hfill {Sep 2019 -- Jun 2024}
     \\
@@ -64,12 +60,11 @@
 \begin{rSection}{Experience}
 
     \begin{rSubsection}{Zalopay - VNG Corporation}{Aug 2022 -- Present}{Software Engineer}{Ho Chi Minh City}
-        \item \textbf{CI/CD:} Designed and implemented a Kubernetes-based CI/CD platform that automates the full delivery pipeline from code commit to production deployment. Achieved an average pipeline build time of 5 minutes, integrated code quality gates (SonarQube) and security scanning to enforce engineering standards, significantly reduced human errors in the release process, and improved overall deployment frequency and developer productivity.
-        \item \textbf{Gateway:} Designed and implemented the Ratelimit platform (based on Apisix), enabling developers to configure and enforce rate-limiting policies within minutes. Built the CAS platform — a centralized authentication system securing all internal ZaloPay tools, significantly improving system security posture.
-        \item \textbf{Private Cloud (SaaS):} Participated in researching and implementing a private cloud platform based on Kubernetes. Contributed to a self-service infrastructure provisioning system that automates resource creation for Redis, Kafka, MySQL, Etcd clusters, and other resources, reducing provisioning time from several days to 5 minutes and enabling development teams to deploy and scale independently.
-        \item \textbf{Innovation:} Actively participated in R\&D initiatives. Researched and provided an OCR-based solution for the customer support team, transforming the user support flow from manual to automated — reducing processing time by 99\% from 20 minutes to under 1 minute per case.
-        \item \textbf{Mentoring \& Knowledge Sharing:} Mentored junior engineers through technical challenges, code reviews, and onboarding. Organized monthly knowledge-sharing sessions and actively pursued continuous learning through internal courses and external platforms.
-
+        \item \textbf{CI/CD:} Architected and maintained a Kubernetes-native CI/CD platform serving \textbf{30+ engineering squads} and \textbf{200+ developers}. Orchestrated \textbf{1,500+ daily pipelines} for \textbf{1,500+ microservices} with an average build time of 5 minutes, enforcing security and quality gates (SonarQube) to significantly reduce release-related human errors.
+        \item \textbf{Gateway:} Engineered a high-performance Ratelimit platform handling \textbf{10k RPS} with sub-millisecond latency using the Apisix ecosystem. Built the CAS platform — a centralized authentication system securing \textbf{50 internal tools}, ensuring high availability and a robust security posture for administrative services.
+        \item \textbf{Private Cloud (SaaS):} Developed a self-service infrastructure platform managing \textbf{1,500+ middleware resources}, including \textbf{1,300+ Kafka topics, 110 Redis clusters, and 100+ MySQL instances}. Reduced infrastructure lead time from \textbf{3 days to 5 minutes}, enabling autonomous scaling for product teams.
+        \item \textbf{Innovation \& AI:} Researched and implemented an OCR-based solution for the customer support team, reducing processing time by \textbf{99\%} for over \textbf{25,000 cases monthly}. Designed and built an AI-powered service using \textbf{LLM and RAG} to automate query resolution for over \textbf{5,000 queries monthly}, grounding responses in company data to improve support efficiency.
+        \item \textbf{Mentoring \& Knowledge Sharing:} Mentored junior engineers through technical challenges and code reviews. Organized monthly knowledge-sharing sessions to foster a culture of continuous learning and engineering excellence.
     \end{rSubsection}
 
     %------------------------------------------------
@@ -83,77 +78,29 @@
 
 \end{rSection}
 
-%-------------------------------------------------------------------------------
-%	PROJECTS
-%-------------------------------------------------------------------------------
-
-\begin{rSection}{Projects}
-
-    \begin{rSubsection}{CI/CD Platform}{Oct 2024 -- Present}{Maintainer}{}
-        \item Maintainer of ZaloPay's internal CI/CD platform built on Kubernetes, automating the full software delivery pipeline from source code to production deployment.
-        \item Designed and implemented pipeline orchestration workflows that reduced deployment time and minimized human error across development teams.
-        \item Integrated code quality gates (SonarQube), automated testing, and security scanning into the pipeline to enforce engineering standards.
-        \item \textbf{Technologies:} Golang, Jenkins, Kubernetes, SonarQube, GitLab CI
-    \end{rSubsection}
-
-    %------------------------------------------------
-
-    \begin{rSubsection}{Gateway Ecosystem (Platform SSO \& Ratelimit)}{Sep 2023 -- Present}{Owner}{}
-        \item Designed and owned the Zalopay authentication system — a centralized, dynamically configurable authentication layer securing all internal ZaloPay tools and services.
-        \item Built the ZaloPay Ratelimit service on top of the Apisix ecosystem, enabling developers to define and enforce rate-limiting policies within minutes via self-service configuration.
-        \item Improved overall API gateway performance and security posture across the platform.
-        \item \textbf{Technologies:} Golang, MySQL, Redis, Apisix, Plugin architecture
-    \end{rSubsection}
-
-    %------------------------------------------------
-
-    \begin{rSubsection}{Gears - Private Cloud Provider}{Aug 2022 -- Present}{Maintainer}{}
-        \item Maintained and extended Zalopay Gears, a self-service infrastructure provisioning platform that automates resource creation for Kafka topics, MySQL clusters, Redis sentinel/cluster, Etcd clusters.
-        \item Contributed to reducing infrastructure setup time for development teams from days to minutes by leveraging Kubernetes Operators and workflow automation.
-        \item Collaborated on implementing Temporal-based workflows to ensure reliability and observability of provisioning operations.
-        \item \textbf{Technologies:} Golang, MySQL, Kubernetes, Kubernetes Operator, Temporal
-    \end{rSubsection}
-
-    %------------------------------------------------
-
-    \begin{rSubsection}{Customer Service AI Application}{Jan 2025 -- Present}{Owner}{}
-        \item Designed and built an AI-powered customer service application leveraging Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) to provide accurate, context-aware responses to user queries.
-        \item Implemented a knowledge base pipeline for document ingestion, embedding, and semantic retrieval to ground LLM responses in real company data.
-        \item Owned the end-to-end architecture including backend API, LLM integration, and retrieval system design.
-        \item \textbf{Technologies:} Python, LLM, RAG
-    \end{rSubsection}
-
-\end{rSection}
-
 %----------------------------------------------------------------------------------------
 %	SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Skills}
-
-    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-        Programming Languages       & Golang, Python.                                              \\
-        Data Structure \& Algorithm & Experience in problem solving                                \\
-        Databases                   & MySQL (Percona), Redis, Etcd                                 \\
-        Technologies                & Docker, Kubernetes, Apisix, Kubernetes Operator              \\
-        Version Control             & Git, Gitlab                                                  \\
-        Self-study                  & Open-source experience, able to read and write clean English \\
-                                    & documents, Research and Development (R\&D)                   \\
-        Methodology                 & Familiarity with Agile/Scrum                                 \\
-    \end{tabular}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	HONORS & AWARDS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Honors \& Awards} \itemsep -3pt
-    \textbf{Champion at Zalopay Hackathon 2025, Zalopay CTF 2025} \hfill 2025 \\
-    \textbf{2nd Runner-up in Zalopay Hackathon 2023} \hfill 2023 \\
-    \textbf{Second Prize in PTIT ICPC} \hfill 2022 \\
-    \textbf{Participate in The 2021 ACM/ICPC Vietnam Regional Contest} \hfill 2022 \\
-\end{rSection}
+\begin{minipage}[t]{0.48\textwidth}
+    \begin{rSection}{Skills}
+        \begin{tabular}{ @{} >{\bfseries}l @{\hspace{1.5ex}} l }
+            Programming  & Golang, Python.      \\
+            Databases    & MySQL, Redis, Etcd.  \\
+            Technologies & K8s, Docker, Apisix. \\
+            Methodology  & Agile/Scrum.         \\
+        \end{tabular}
+    \end{rSection}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \begin{rSection}{Honors \& Awards}
+        \textbf{Zalopay Hackathon Champ} \hfill 2025 \\
+        \textbf{Zalopay CTF Champ} \hfill 2025 \\
+        \textbf{2nd Runner-up Hack 2023} \hfill 2023 \\
+        \textbf{Second Prize PTIT ICPC} \hfill 2022 \\
+    \end{rSection}
+\end{minipage}
 
 %----------------------------------------------------------------------------------------
 %	VOLUNTEER SECTION
