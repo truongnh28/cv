@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+ 
+\documentclass{resume} % Use the custom resume.cls style 
+
+\usepackage[left=0.4 in,top=0.3 in,right=0.4 in,bottom=0.3in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{NGUYEN HUU TRUONG} % Your name 
+\address{Ho Chi Minh City, Vietnam \\ +84 986103378 \\ truongnh2802@gmail.com \\ linkedin.com/in/truongnh28}
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Summary}
+    I am a Software Engineer at Zalopay with experience in designing and building platform architecture, CI/CD systems, distributed infrastructure, and high-concurrency environments. I have a strong background in distributed systems, event-driven architectures, and AI enablement initiatives, with a proven track record of architecting scalable platforms and driving engineering productivity improvements.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+    {\bf Ho Chi Minh City University of Technology (HCMUT)} \hfill {Dec 2024 -- Present}
+    \\
+    Master of Engineering in Computer Science, GPA: 8.0/10
+
+    {\bf Posts and Telecommunications Institute of Technology (PTIT)} \hfill {Sep 2019 -- Jun 2024}
+    \\
+    Engineer's Degree in Information Technology, GPA: 3.31/4.00
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+    \begin{rSubsection}{Zalopay - VNG Corporation}{May 2022 -- Present}{Software Engineer}{Ho Chi Minh City}
+        \item \textbf{AI Automation:} Architected \& deployed a \textbf{multi-agent} ticket processing system via a LangGraph state machine. Processed \textbf{32K+ tickets} with \textbf{80.1\% automation rate}, peaking \textbf{99.8\%} for IBFT. Designed \textbf{9+ smart workflows} (IBFT, promotions, reopen handling) with \textbf{LLM intent classification}. Slashed handling time \textbf{4x faster}, saving the CS team 187 hrs/mo.
+        \item \textbf{Innovation \& AI:} Researched and implemented an OCR-based solution for the customer support team, reducing processing time by \textbf{99\%} for over \textbf{25,000 cases monthly}. Designed and built an AI-powered service using \textbf{LLM and RAG} to automate query resolution for over \textbf{5,000 queries monthly}, grounding responses in company data to improve support efficiency.
+        \item \textbf{CI/CD:} Architected and maintained a Kubernetes-native CI/CD platform serving \textbf{30+ engineering squads} and \textbf{200+ developers}. Orchestrated \textbf{1,500+ daily pipelines} for \textbf{1,500+ microservices} with an average build time of 5 minutes, enforcing security and quality gates (SonarQube) to significantly reduce release-related human errors.
+        \item \textbf{Gateway:} Engineered a high-performance Ratelimit platform handling \textbf{10k RPS} with sub-millisecond latency using the Apisix ecosystem. Built the CAS platform — a centralized authentication system securing \textbf{50 internal tools}, ensuring high availability and a robust security posture for administrative services.
+        \item \textbf{Private Cloud (SaaS):} Developed a self-service infrastructure platform managing \textbf{1,500+ middleware resources}, including \textbf{1,300+ Kafka topics, 110 Redis clusters, 100+ MySQL clusters and 10+ ETCD clusters}. Reduced infrastructure lead time from \textbf{3 days to 5 minutes}, enabling autonomous scaling for product teams.
+        \item \textbf{Mentoring \& Knowledge Sharing:} Mentored junior engineers through technical challenges and code reviews. Organized monthly knowledge-sharing sessions to foster a culture of continuous learning and engineering excellence.
+    \end{rSubsection}
+
+    %------------------------------------------------
+
+    \begin{rSubsection}{Zalopay - VNG Corporation}{May 2022 -- Aug 2022}{Fresher Software Engineer}{Ho Chi Minh City}
+        \item \textbf{Competitive Selection:} Selected from over 2000 applicants in the VNG Tech Program 2022 through a rigorous process including technical entrance tests and mentor interviews.
+        % \item \textbf{Structured Training:} Completed a comprehensive mentorship program covering backend engineering, databases, distributed systems, and front-end development, alongside soft skills including teamwork and technical communication.
+
+    \end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.48\textwidth}
+    \begin{rSection}{Skills}
+        \smallskip
+        \begin{tabular}{ @{} >{\bfseries}l @{\hspace{1.5ex}} l }
+            Programming  & Golang, Python.      \\
+            Databases    & MySQL, Redis, Etcd.  \\
+            Technologies & K8s, Docker, Apisix. \\
+            Methodology  & Agile/Scrum.         \\
+        \end{tabular}
+    \end{rSection}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \begin{rSection}{Honors \& Awards}
+        \smallskip
+        \textbf{Zalopay Hackathon Champion} \hfill 2025 \\
+        \textbf{2nd Runner-up Hack 2023} \hfill 2023 \\
+        \textbf{Participate in The 2021 ACM/ICPC} \hfill 2022 \\
+        \textbf{Second Prize PTIT ICPC} \hfill 2022 \\
+    \end{rSection}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTEER SECTION
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Volunteer}
+
+%     \begin{rSubsection}{Information Technology Multimedia Club}{Jan 2020 -- Present}{Technical Consultant}{HCMC}
+
+%         As a technical consultant for the club, I am responsible for:
+
+%         \item \textbf{Organizing:} Support in organizing club activities.
+%         \item \textbf{Mentoring:} Guiding, developing, and mentoring club members to achieve their full potential.
+%         \item \textbf{Instructor:} Instructor and teaching assistant for C++ programming language class, basic algorithm class,... with more than 30 members.
+
+%     \end{rSubsection}
+
+% \end{rSection}
+
+\end{document}
